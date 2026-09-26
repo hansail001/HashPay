@@ -12,6 +12,8 @@ export interface AppEnv {
   DB: D1Database;
   QUEUE_NOTIFY?: QueueBinding<Record<string, unknown>>;
   TGBOT_TOKEN?: string;
+  /** 机器开通守卫（fork 补丁；缺失 → /api/bootstrap 404 不暴露） */
+  BOOTSTRAP_TOKEN?: string;
 }
 
 export interface AppVariables {
